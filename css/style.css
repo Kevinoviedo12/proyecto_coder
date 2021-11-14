@@ -18,7 +18,7 @@ body {
   height: 80px;
   width: 300px;
   background-repeat: no-repeat;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top: 10px;
   flex-wrap: nowrap; }
 
@@ -85,7 +85,6 @@ nav {
 
 .container-novedades {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,6 +93,7 @@ nav {
 
 section .container-img {
   width: 90%;
+  height: 100%;
   background-color: rgba(218, 218, 218, 0.822);
   border-radius: 80px;
   /* Aca cambio el color */ }
@@ -150,7 +150,7 @@ section .container-img section .img4 {
   border-radius: 50%; }
 
 section .container-img div {
-  margin: 50px; }
+  margin: 40px; }
 
 .novedades p {
   text-align: center;
@@ -225,17 +225,14 @@ div .email {
   grid-template-areas: "logo direccion pago redes" "logo direccion pago redes" "logo horario   pago redes" "logo horario   pago email" "logo horario   pago email" "logo horario   pago email";
   grid-template-columns: 30% 20% 20% 20%;
   grid-template-rows: 200px 1fr 1fr 75px 75px 75px;
-  grid-column-gap: 25px;
   grid-row-gap: 25px;
   background: #c542814d; }
 
-/* div .bordes{
-    border: 6px solid #FFFF;
-} */
 #grilla h3 {
   font-family: 'Kaushan Script', cursive;
   font-size: 26px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  width: 80%; }
 
 #grilla p {
   margin-bottom: 25px; }
@@ -687,13 +684,8 @@ hr {
 @media (max-width: 600px) {
   #grilla {
     display: grid;
-    width: 100%;
     padding-top: 10%;
     grid-template-areas: "logo logo logo logo" "direccion direccion direccion direccion" "horario horario  horario horario" "pago pago   pago pago" "pago pago   pago pago" "redes redes  redes redes" "redes redes  redes redes" "email email   email email";
-    grid-template-columns: 30% 20% 20% 20%;
-    grid-template-rows: 200px 1fr 1fr 75px 75px 75px 75px 75px;
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
     background: #c542814d; } }
 
 @media (min-width: 700px) {
