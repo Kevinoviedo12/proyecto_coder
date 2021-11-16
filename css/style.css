@@ -9,16 +9,9 @@
 body {
   background: #FAFAFA; }
 
-.logo {
-  height: 80px;
-  width: 300px;
-  background-repeat: no-repeat;
-  margin-left: 20px;
-  flex-wrap: nowrap; }
-
 .menu {
-  background-color: #C54281;
-  height: 75px;
+  background-color: #cc6094;
+  height: 80px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -33,7 +26,8 @@ body {
 
 .menu_items li {
   border-radius: 5px;
-  margin: 0px 5px; }
+  margin: 0px 5px;
+  width: max-content; }
 
 .menu_items li a {
   margin: 7px 13px;
@@ -62,16 +56,20 @@ ul.show {
     font-size: 15px; } }
 
 @media screen and (max-width: 858px) {
+  .logo-menu {
+    width: 230px;
+    height: 40px; }
   .menu {
     height: 65px; }
   .btn_menu {
     display: inline-flex; }
   .menu_items {
+    z-index: 20;
     position: fixed;
     width: 100vw;
     height: calc(100% - 65px);
     background: pink;
-    top: -100vw;
+    top: -100%;
     text-align: center;
     transition: all .4s;
     flex-direction: column; }
