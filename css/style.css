@@ -10,7 +10,7 @@ body {
   background: #FAFAFA; }
 
 .menu {
-  background-color: #cc6094;
+  background-color: #db7eab;
   height: 80px;
   width: 100%;
   display: flex;
@@ -38,7 +38,7 @@ body {
   color: #fff; }
 
 .menu_items li:hover {
-  background-color: #e684b3;
+  background-color: #a7569280;
   transition: .4s; }
 
 .btn_menu {
@@ -53,12 +53,37 @@ ul.show {
 
 @media screen and (max-width: 952px) {
   .menu_items li a {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .container-comprar {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap; }
+  .container-comprar .compra {
+    width: 100%;
+    margin: 50px; } }
+
+@media screen and (max-width: 1250px) {
+  .menu_items li a {
+    font-size: 15px; }
+  .container-comprar {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap; }
+  .container-comprar .compra {
+    width: 100%;
+    margin: 50px; } }
 
 @media screen and (max-width: 858px) {
   .logo-menu {
     width: 230px;
     height: 40px; }
+  .container-comprar {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap; }
+  .container-comprar .compra {
+    width: 100%;
+    margin: 50px; }
   .menu {
     height: 65px; }
   .btn_menu {
@@ -70,9 +95,9 @@ ul.show {
     height: calc(100% - 65px);
     background: pink;
     top: -100%;
-    text-align: center;
     transition: all .4s;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
   .menu_items li {
     margin: 30px 0 0 0;
     line-height: 30px; }
@@ -296,10 +321,7 @@ footer h3 {
   --twitter: #55acee; }
 
 .redes-container {
-  display: flex;
-  /* height: 10vw; ocupa espacio que se ve en pantalla */
-  /* align-items: center;
-    justify-content:center ; */ }
+  display: flex; }
 
 .redes-container ul li a {
   display: block;
@@ -401,9 +423,8 @@ div .conteiner-titulo {
 
 #grilla-1 {
   display: grid;
-  width: 100%;
   grid-template-areas: "titulo     titulo" "parrafo-1  img-1" "parrafo-1  parrafo-2" "img-2      parrafo-2" "img-2      parrafo-2";
-  grid-template-rows: 70px 1fr 1fr 280px;
+  grid-template-rows: 70px 280px;
   grid-column-gap: 35px;
   grid-row-gap: 20px;
   background: #c542814d; }
@@ -414,8 +435,7 @@ div .conteiner-titulo {
   padding: 20px 0; }
 
 #grilla-1 .parrafo-1 {
-  justify-self: end;
-  /* margin: 25px 0; */ }
+  justify-self: end; }
 
 #grilla-1 .parrafo-1 {
   line-height: 1.5; }
@@ -468,15 +488,8 @@ div .conteiner-titulo {
   border: none; }
 
 /* COMO COMPRAR */
-.comprar {
-  color: #0a0202;
-  text-align: center;
-  padding: 15%;
-  color: white; }
-
 .container-comprar {
   display: flex;
-  align-items: center;
   text-align: center; }
 
 .container-comprar .compra {
@@ -594,7 +607,7 @@ hr {
         text-transform: uppercase;
         padding: 1em; }
   .form__info {
-    background: #c90664cc;
+    background: #da83adcc;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px; }
     .form__info h3, .form__info ul, .form__info p {
@@ -690,7 +703,8 @@ hr {
 
 .container-tienda-comprar {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 100px; }
   .container-tienda-comprar div {
     text-align: center; }
