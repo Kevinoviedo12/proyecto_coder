@@ -443,6 +443,28 @@ div .conteiner-titulo {
 #grilla-1 .parrafo-2 {
   line-height: 1.5; }
 
+@media screen and (max-width: 856px) {
+  #grilla-1 {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "titulo" "img-1" "parrafo-1" "parrafo-2" "img-2";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 35px;
+    grid-row-gap: 20px;
+    background: #c542814d; }
+  #grilla-1 .titulo {
+    padding-right: 40px; }
+  #grilla-1 .img-1, .titulo {
+    justify-self: center; }
+  #grilla-1 .img-2, .titulo {
+    justify-self: center;
+    padding-bottom: 30px; }
+  #grilla-1 .parrafo-1 {
+    justify-self: center; }
+  #grilla-1 .parrafo-2 {
+    justify-self: center; } }
+
 .subTitulos {
   text-align: center;
   font-size: 50px;
