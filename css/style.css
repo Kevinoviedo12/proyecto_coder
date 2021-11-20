@@ -10,7 +10,7 @@ body {
   background: #FAFAFA; }
 
 .menu {
-  background-color: #db7eab;
+  background-color: #db7eab69;
   height: 80px;
   width: 100%;
   display: flex;
@@ -50,6 +50,11 @@ body {
 
 ul.show {
   top: 65px; }
+
+.carousel-item img {
+  object-fit: cover;
+  width: 90%;
+  height: 90vh; }
 
 @media screen and (max-width: 952px) {
   .menu_items li a {
