@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
+ul{
+    margin-bottom:0 !important;
+}
 body{
     background: #FAFAFA;
 }
@@ -181,6 +185,8 @@ section .container-img1{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: center;
+    gap:150px;
 }
 
 section .container-img section{

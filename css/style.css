@@ -6,6 +6,12 @@
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box; }
 
+
+  ul{
+    margin-bottom:0 !important;
+}
+
+
 body {
   background: #FAFAFA; }
 
@@ -53,7 +59,9 @@ ul.show {
 
 .carousel-item img {
   width: 90%;
-  height: 90vh; }
+  height: 90vh; 
+  object-fit: cover;
+}
 
 @media screen and (max-width: 952px) {
   .menu_items li a {
@@ -77,7 +85,7 @@ ul.show {
     width: 100%;
     margin: 50px; } }
 
-@media screen and (max-width: 858px) {
+@media screen and (max-width: 1055px) {
   .logo-menu {
     width: 230px;
     height: 40px; }
@@ -151,7 +159,10 @@ section .container-img1 {
   width: 100%;
   align-items: center;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 50px;
+}
 
 section .container-img section {
   display: flex;
@@ -198,8 +209,8 @@ section .container-img section .img4 {
   background-size: cover;
   border-radius: 50%; }
 
-section .container-img div {
-  margin: 40px; }
+/* section .container-img div {
+  margin: 40px; } */
 
 .novedades p {
   text-align: center;
@@ -271,7 +282,12 @@ div .email {
   display: grid;
   width: 100%;
   padding-top: 10%;
-  grid-template-areas: "logo direccion pago redes" "logo direccion pago redes" "logo horario   pago redes" "logo horario   pago email" "logo horario   pago email" "logo horario   pago email";
+  grid-template-areas: "logo direccion pago redes"
+ "logo direccion pago redes"
+ "logo horario   pago redes"
+ "logo horario   pago email"
+ "logo horario   pago email"
+ "logo horario   pago email";
   grid-template-columns: 30% 20% 20% 20%;
   grid-template-rows: 200px 1fr 1fr 75px 75px 75px;
   grid-row-gap: 25px;
@@ -427,7 +443,11 @@ div .conteiner-titulo {
 
 #grilla-1 {
   display: grid;
-  grid-template-areas: "titulo     titulo" "parrafo-1  img-1" "parrafo-1  parrafo-2" "img-2      parrafo-2" "img-2      parrafo-2";
+  grid-template-areas: "titulo     titulo"
+ "parrafo-1  img-1"
+ "parrafo-1  parrafo-2"
+ "img-2      parrafo-2"
+ "img-2      parrafo-2";
   grid-template-rows: 70px 280px;
   grid-column-gap: 35px;
   grid-row-gap: 20px;
@@ -451,7 +471,11 @@ div .conteiner-titulo {
   #grilla-1 {
     display: grid;
     width: 100%;
-    grid-template-areas: "titulo" "img-1" "parrafo-1" "parrafo-2" "img-2";
+    grid-template-areas: "titulo"
+ "img-1"
+ "parrafo-1"
+ "parrafo-2"
+ "img-2";
     grid-template-columns: 100%;
     grid-template-rows: 1fr;
     grid-column-gap: 35px;
@@ -745,7 +769,14 @@ hr {
   #grilla {
     display: grid;
     padding-top: 10%;
-    grid-template-areas: "logo logo logo logo" "direccion direccion direccion direccion" "horario horario  horario horario" "pago pago   pago pago" "pago pago   pago pago" "redes redes  redes redes" "redes redes  redes redes" "email email   email email";
+    grid-template-areas: "logo logo logo logo"
+ "direccion direccion direccion direccion"
+ "horario horario  horario horario"
+ "pago pago   pago pago"
+ "pago pago   pago pago"
+ "redes redes  redes redes"
+ "redes redes  redes redes"
+ "email email   email email";
     background: #c542814d; } }
 
 @media (min-width: 700px) {
